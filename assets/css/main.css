@@ -1669,18 +1669,18 @@ ol {
 }
 
 .header .navbar-brand img {
-  width: 180px;
+  width: 75px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header .navbar-brand img {
-    width: 150px;
+    width: 60px;
   }
 }
 
 @media (max-width: 767px) {
   .header .navbar-brand img {
-    width: 140px;
+    width: 40px;
   }
 }
 
@@ -3427,8 +3427,15 @@ ol {
 /*======================================
     Process Area CSS
 ========================================*/
+.about {
+  padding-top: 80px;
+}
 .about img {
   width: 100%;
+}
+
+.about .container .pas-1 {
+  margin-bottom: 90px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -3456,16 +3463,18 @@ ol {
 }
 
 .about .content h4 {
-  color: #3e80ff;
+  color: var(--yellow);
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .about .content h2 {
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 700;
   line-height: 48px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3486,57 +3495,79 @@ ol {
 
 .about .content p {
   font-size: 16px;
-  margin-top: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.about .content .visi span,
+.about .content .misi span,
+.about .content .proker span {
+  color: var(--dark-blue);
+  font-size: 17px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
 }
 
-.about .content .list .single-list {
-  position: relative;
-  padding-left: 30px;
-  margin-top: 40px;
-  padding-right: 20px;
-  display: inline-block;
+.about .content .misi .list-group li {
+  margin-top: 4px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about .content .list .single-list {
-    width: 49%;
+.about .content .proker .list {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .content .proker .list .single-list {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .list-container {
+    flex-direction: column; /* Mengubah list menjadi tampilan vertikal */
+  }
+
+  .single-list {
+    margin-right: 0; /* Hapus margin kanan saat tampilan menjadi vertikal */
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak antara list */
   }
 }
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about .content .proker .list .single-list {
+    width: 49%;
+  }
+} */
 
-.about .content .list .single-list .list-icon {
-  height: 20px;
-  width: 20px;
-  line-height: 20px;
+.about .content .proker .list .single-list .list-icon {
+  height: 22px;
+  width: 22px;
   text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  color: #3e80ff;
-  font-size: 11px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   background-color: #3e80ff;
   color: #fff;
+  margin-right: 6px;
+}
+.about .content .proker .list .single-list .list-icon i {
+  font-size: 10px;
 }
 
-.about .content .list .single-list:hover .list-icon {
+.about .content .proker .list .single-list:hover .list-icon {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
-.about .content .list .single-list h4 {
-  color: #24126a;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
+.about .content .proker .list .single-list p {
+  color: rgba(0, 0, 0, 0.8);
 
-.about .content .list .single-list p {
-  margin: 0;
   font-size: 15px;
-  line-height: 24px;
+  /* margin-bottom: 10px; */
 }
 
 /*======================================
