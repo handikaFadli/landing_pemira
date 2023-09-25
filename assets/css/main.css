@@ -1882,6 +1882,7 @@ ol {
 .hero-area .hero-content h1 span {
   position: relative;
   z-index: 0;
+  color: var(--yellow);
 }
 
 .hero-area .hero-content h1 span .text-shape {
@@ -4486,6 +4487,7 @@ blockquote span {
 ========================================*/
 .account-login {
   background-color: #f4f7fa;
+  padding-top: 80px;
 }
 
 .account-login .inner-content {
@@ -4529,15 +4531,19 @@ blockquote span {
 }
 
 .account-login .login-form .title h3 {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
-  color: #24126a;
+  color: var(--dark-blue);
   margin-bottom: 8px;
+}
+
+.account-login .login-form .title p {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 767px) {
   .account-login .login-form .title h3 {
-    font-size: 22px;
+    font-size: 23px;
   }
 }
 
@@ -4583,16 +4589,19 @@ blockquote span {
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.233);
 }
 
+.account-login .remember-me {
+  color: rgba(0, 0, 0, 0.8);
+}
 .account-login .lost-pass {
-  color: #888;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .account-login .lost-pass:hover {
-  color: #3e80ff;
+  color: var(--dark-blue);
 }
 
 .account-login .button {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -4610,6 +4619,7 @@ blockquote span {
 }
 
 .account-login .button .btn {
+  background-color: var(--dark-blue);
   padding: 14px 40px;
   margin-right: 20px;
   width: 100%;
@@ -4707,7 +4717,7 @@ blockquote span {
 
 .account-login .create-account {
   font-weight: 500;
-  color: #24126a;
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
   margin-top: 35px;
   font-size: 14px;
@@ -4715,7 +4725,7 @@ blockquote span {
 }
 
 .account-login .create-account a {
-  color: #3e80ff;
+  color: var(--yellow);
 }
 
 .account-login .create-account a:hover {
