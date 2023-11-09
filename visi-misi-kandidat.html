@@ -83,7 +83,7 @@
     <section class="about section">
       <div class="container">
         <div class="row align-items-center pas-1">
-          <div class="col-lg-5 col-12">
+          <div class="col-lg-5 col-12 poster">
             <div class="image wow fadeInUp img-kandidat" data-wow-delay=".4s">
               <img src="" alt="poster" id="poster-paslon1" />
             </div>
@@ -104,6 +104,11 @@
                 <span>Proker</span>
                 <ol class="list-group list-group-numbered" id="proker-paslon1"></ol>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 poster-mobile">
+            <div class="image wow fadeInUp img-kandidat" data-wow-delay=".4s">
+              <img src="" alt="poster" id="poster-paslon1-mob" />
             </div>
           </div>
         </div>
@@ -133,7 +138,7 @@
           </div>
         </div>
         <div class="row align-items-center pas-3">
-          <div class="col-lg-5 col-12">
+          <div class="col-lg-5 col-12 poster">
             <div class="image wow fadeInUp img-kandidat" data-wow-delay=".4s">
               <img src="" alt="poster" id="poster-paslon3" />
             </div>
@@ -154,6 +159,11 @@
                 <span>Proker</span>
                 <ol class="list-group list-group-numbered" id="proker-paslon3"></ol>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 poster-mobile">
+            <div class="image wow fadeInUp img-kandidat" data-wow-delay=".4s">
+              <img src="" alt="poster" id="poster-paslon3-mob" />
             </div>
           </div>
         </div>
@@ -207,6 +217,7 @@
 
         // Paslon 1
         document.getElementById("poster-paslon1").src = paslonData.posterpaslon1;
+        document.getElementById("poster-paslon1-mob").src = paslonData.posterpaslon1;
         document.getElementById("nama-paslon1").innerText = paslonData.namapaslon1;
         document.getElementById("visi-paslon1").innerText = paslonData.visipaslon1;
 
@@ -253,6 +264,7 @@
 
         // Paslon 3
         document.getElementById("poster-paslon3").src = paslonData.posterpaslon3;
+        document.getElementById("poster-paslon3-mob").src = paslonData.posterpaslon3;
         document.getElementById("nama-paslon3").innerText = paslonData.namapaslon3;
         document.getElementById("visi-paslon3").innerText = paslonData.visipaslon3;
 
