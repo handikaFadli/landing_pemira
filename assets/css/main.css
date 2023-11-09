@@ -2343,6 +2343,7 @@ ol {
   border-top: 3px solid var(--blue);
   border-bottom: 3px solid var(--blue);
   position: relative;
+  cursor: pointer;
 }
 
 .card-kandidat .feature-box:hover {
@@ -3330,7 +3331,8 @@ ol {
   width: 100%;
 }
 
-.about .container .pas-1 {
+.about .container .pas-1,
+.about .container .pas-2 {
   margin-bottom: 90px;
 }
 
@@ -5537,18 +5539,19 @@ blockquote span {
   position: relative;
 }
 
-.profil-kandidat .container.pas-1 {
+.profil-kandidat .container.pas-1,
+.profil-kandidat .container.pas-2 {
   margin-bottom: 90px;
 }
 
 .profil-kandidat .container .paslon-label {
   position: absolute;
-  top: -50px;
-  right: -190px;
+  top: -65px;
+  right: -520px;
   z-index: 2;
 }
 .profil-kandidat .container .paslon-label img {
-  width: 40%;
+  width: 21%;
 }
 
 .profil-kandidat .container .box {
